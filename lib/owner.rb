@@ -58,6 +58,6 @@ class Owner
     @pets.keys.each{|k| @pets[k].each{|pet| pet.mood = "nervous"}.clear}
   end
   def list_pets
-    @pets.each{}
+    @pets.keys.each{|k| @pets[k]}
   end
 end
