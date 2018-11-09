@@ -22,4 +22,5 @@ class Owner
 
   def say_species
     "I am human"
+  end
 end
