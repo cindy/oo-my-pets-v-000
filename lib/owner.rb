@@ -19,4 +19,7 @@ class Owner
   def self.count
     @@all.size
   end
+
+  def say_species
+    "I am human"
 end
