@@ -55,6 +55,9 @@ class Owner
   end
 
   def sell_pets
-    @pets.keys.each{|k| @pets[k].each{|pet| pet.mood = "nervous"}.clear}
+    @pets.each{|k| @pets[k].each{|pet| pet.mood = "nervous"}.clear}
+  end
+  def list_pets
+    @pets.each{}
   end
 end
