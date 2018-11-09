@@ -58,6 +58,7 @@ class Owner
     @pets.keys.each{|k| @pets[k].each{|pet| pet.mood = "nervous"}.clear}
   end
   def list_pets
+    require 'pry'; binding.pry
     "I have #{@pets[:fishes].size} fish, #{@pets[:dogs].size} dog(s), and #{@pets[:cat].size} cat(s)."
   end
 end
